@@ -15,16 +15,16 @@ public class LinkedListTest {
     	LinkedList list = new LinkedList();
     	
     	list.printList();						// "empty"
-    	list.insertFront(1);					// 1
+    	list.insertFront(1);						// 1
     	list.insertBack(2);						// 1 2 
-    	list.insertMid(3,0);					// 1 3 2
+    	list.insertMid(3,0);						// 1 3 2
     	list.printList();						// "1 3 2"
-    	System.out.println(list.sizeOf());		// "3"
+    	System.out.println(list.sizeOf());				// "3"
     	list.remove(2);							// 1 3
     	list.printList();						// "1 3"
     	list.reverse();							// 3 1
     	list.printList();						// "3 1"
-    	System.out.println(list.search(5));		// "1"
+    	System.out.println(list.search(5));				// "-1"
     	
 	}
 }
