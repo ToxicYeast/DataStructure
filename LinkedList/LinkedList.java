@@ -122,15 +122,15 @@ public class LinkedList {
 		Node current = first;
 		int index = 0;
 		
-		while(current != null){
+		while(current != null){			//travle to target Node
 			
-			if(current.getVal() == targetVaule){
+			if(current.getVal() == targetVaule){		
 				return index;
 			}
 			index++;
 			current = current.getNext();
 		}
-		return -1;
+		return -1;		//not found
 	}
 	
 	
