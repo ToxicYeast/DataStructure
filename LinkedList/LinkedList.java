@@ -117,5 +117,21 @@ public class LinkedList {
 		
 	}
 	
+	public int search(int targetVaule){
+		
+		Node current = first;
+		int index = 0;
+		
+		while(current != null){
+			
+			if(current.getVal() == targetVaule){
+				return index;
+			}
+			index++;
+			current = current.getNext();
+		}
+		return -1;
+	}
+	
 	
 }
