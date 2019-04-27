@@ -1,0 +1,21 @@
+Postfix calculation:
+
+  1. If input is numerical value → push into Stack
+  2. If input is operator → pop 2 element and calculate with operator. Then push result into Stack.
+  
+Infix to postfix
+
+Part A:(In Loop)
+
+  1. If input is numerial value → direct output
+  2. If input is operator
+      a. If current Stack is empty or operator is "(" → push into Stack
+      b. If operator is ")" → pop the Stack until "("
+      c. Compare operator priority. 
+          priority is lower than stack top → output.
+          priority is higher than stack top → push.
+          ★"(" is the lowest priority★
+
+Part B:(End Loop)
+
+  1. Pop all operator in Stack
